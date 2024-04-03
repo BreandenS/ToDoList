@@ -17,7 +17,7 @@ To get started with this project, follow these steps:
 1. Clone the repository to your local machine:
 
    ```bash
-   git clone https://github.com/Breanden/toDoList.git
+   git clone https://github.com/BreandenS/ToDoList.git
    ```
 
 2. Open the project directory in your code editor of choice.
