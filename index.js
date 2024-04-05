@@ -9,7 +9,7 @@ const addTaskFunction = (event) => {
 
     const inputTaskElement = document.getElementById("add-task-input");
     const newTaskElement = inputTaskElement.value;
-    taskListElement.innerHTML += `<li>${newTaskElement}</li>`;
+    taskListElement.innerHTML += `<div>${newTaskElement}</div><button>edit</button><button>delete</button>`;
 
 
     taskListArray.push(newTaskElement);

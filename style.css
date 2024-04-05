@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     background-image: image();
 }
-ul {
+ol {
     list-style-type: none;
     padding: 0;
 }
