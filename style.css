@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-image: url('your-background-image-url.jpg');
+    background-image: url(''); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -18,18 +18,18 @@ li {
 input[type="text"] {
     padding: 8px;
     width: 220px; 
-    border: 1px solid #ccc;
+    border: 1px solid black;
     border-radius: 5px;
 }
 
 button {
     padding: 8px 15px;
     cursor: pointer;
-    background-color: #4CAF50;
-    color: #fff;
+    background-color:  orange;
+    color: black;
     border: none;
     border-radius: 5px;
-    transition: background-color 0.3s;
+    transition: background-color black;
 }
 
 button:hover {
@@ -40,7 +40,7 @@ button:hover {
 .edit-button {
     padding: 5px;
     cursor: pointer;
-    border: none;
+    border: black;
     background: none;
 }
 

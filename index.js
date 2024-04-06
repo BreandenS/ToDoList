@@ -5,16 +5,20 @@ const taskListElement = document.getElementById("task-list");
 
 
 
+
 const addTaskFunction = (newTaskElement) => {
 
 
-    taskListArray.push(newTaskElement);
-    console.log(newTaskElement);
 
-   populateDom(taskListElement, newTaskElement);
+    if (newTaskElement) {
+        
+        taskListArray.push(newTaskElement);
+        console.log(newTaskElement);
+
+        populateDom(taskListElement, newTaskElement);
+    }
 
 }
-
 
 
 taskFormElement.addEventListener("submit", handleFormSubmit);
