@@ -1,22 +1,20 @@
 
-const taskListArray = [];
+let taskListArray = [];
 const taskFormElement = document.getElementById("add-task-form");
 const taskListElement = document.getElementById("task-list");
 
-const addTaskFunction = (event) => {
-    event.preventDefault();
 
 
-    const inputTaskElement = document.getElementById("add-task-input");
-    const newTaskElement = inputTaskElement.value;
-    taskListElement.innerHTML += `<div>${newTaskElement}</div><button>edit</button><button>delete</button>`;
+const addTaskFunction = (newTaskElement) => {
 
 
     taskListArray.push(newTaskElement);
     console.log(newTaskElement);
 
-    inputTaskElement.value = "";
+   populateDom(taskListElement, newTaskElement);
 
 }
 
-taskFormElement.addEventListener("submit", addTaskFunction);
+
+
+taskFormElement.addEventListener("submit", handleFormSubmit);
