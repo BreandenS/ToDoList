@@ -1,10 +1,14 @@
 body {
+
     font-family: Arial, sans-serif;
-    background-image: url(''); 
+    background-image: url('');
     background-size: cover;
-    background-position: center;
     background-repeat: no-repeat;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
 }
+
 
 ol {
     list-style-type: none;
@@ -12,27 +16,28 @@ ol {
 }
 
 li {
-    margin-bottom: 10px; 
+    margin-bottom: 10px;
 }
 
 input[type="text"] {
     padding: 8px;
-    width: 220px; 
+    width: 220px;
     border: 1px solid black;
     border-radius: 5px;
 }
 
-button {
+.add-button {
     padding: 8px 15px;
+    width: 220px;
     cursor: pointer;
-    background-color:  orange;
+    background-color: orange;
     color: black;
     border: none;
     border-radius: 5px;
     transition: background-color black;
 }
 
-button:hover {
+.add-button:hover {
     background-color: #45a049;
 }
 
@@ -40,11 +45,32 @@ button:hover {
 .edit-button {
     padding: 5px;
     cursor: pointer;
-    border: black;
-    background: none;
+    border: 1px solid black;
+    border-radius: 3px;
 }
 
-.delete-button:hover,
-.edit-button:hover {
+.delete-button {
     color: #f44336;
+    background-color: transparent;
+}
+
+.delete-button:hover {
+    background-color: #ffcccc;
+}
+
+.edit-button {
+    color: #007bff;
+    background-color: transparent;
+}
+
+.edit-button:hover {
+    background-color: #cce5ff;
+}
+
+.task {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /*width: 30% ;*/
+    background-color: ;
 }

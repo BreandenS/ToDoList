@@ -19,6 +19,6 @@ const addTaskFunction = (newTaskElement) => {
     }
 
 }
-
+populateDom("task-list","Dom");
 
 taskFormElement.addEventListener("submit", handleFormSubmit);
